@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+<form id="myForm">
+  <input type="text" id="myInput">
+
+
+  
+</form>
+<br>
+<form id="myFo">
+ 
+  <input type="text" id="my">
+
+  
+</form>
+
+<script>
+var x = document.getElementById("myForm");
+x.addEventListener("focus", myFocusFunction, true);
+x.addEventListener("blur", myBlurFunction, true);
+
+function myFocusFunction() {
+  document.getElementById("myInput").style.backgroundColor = "red";  
+}
+
+function myBlurFunction() {
+  document.getElementById("myInput").style.backgroundColor = "";  
+}
+
+var x = document.getElementById("myFo");
+x.addEventListener("focus", myFocusFunctio, true);
+x.addEventListener("blur", myBlurFunctio, true);
+
+function myFocusFunctio() {
+  document.getElementById("my").style.backgroundColor = "yellow";  
+}
+
+function myBlurFunctio() {
+  document.getElementById("my").style.backgroundColor = "";  
+}
+
+</script>
+
+</body>
+</html>
