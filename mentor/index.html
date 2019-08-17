@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Mentor-on-Demand-Login</title>
+
+  
+  <link href="style.css" rel="stylesheet" id="bootstrap-css">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+
+  <style>
+  
+</style>
+  
+
+</head>
+<body>
+
+
+<input type="hidden" name="id1" value="" id="id1">
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+  <div class="col-sm-8">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Mentor-On-Demand</a>
+    </div>
+	</div>
+	 <div class="col-sm-4">
+     <div class="collapse navbar-collapse" id="myNavbar">
+		<div class="navbar-right">
+			<div class="dropdown">
+				
+				<button class="btn btn-success"><span class="glyphicon glyphicon-user"></span> SignUp</button>
+				<div class="dropdown-content">
+				
+					
+					<a href="#"  id="button1" data="1" role="button" onclick="showcommentform(this.id)">User SignUp</a>
+					
+					<a href="#"  id="button2" data="2" role="button" onclick="showcommentform(this.id)">Mentor SignUp</a>					
+
+					<a href="#"  id="button3" data="3" role="button" onclick="showcommentform(this.id)">Admin SignUp</a>
+					
+					
+				</div>
+			</div>
+			
+			
+			<div class="dropdown" >
+				<button class="btn btn-success"><span class="glyphicon glyphicon-log-in"></span> Login</button>
+				<div class="dropdown-content">
+				
+					<a href="#"  id="button4" data="4" role="button" onclick="showcommentform(this.id)">User Login</a>
+					
+					<a href="#"  id="button5" data="5" role="button" onclick="showcommentform(this.id)">Mentor Login</a>
+					
+					<a href="#"  id="button6" data="6" role="button" onclick="showcommentform(this.id)">Admin Login</a>
+					
+					
+				</div>
+			</div>
+			
+		</div>
+    
+  </div>
+  </div>
+  </div>
+</nav>
+
+
+<div class="container">
+	<div id="mylocation"></div> 
+	<form id="myform"></form>
+
+	
+</div>
+
+
+
+  <script src="index.js"></script>
+
+  
+</body>
+</html>
