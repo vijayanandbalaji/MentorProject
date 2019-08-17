@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    User SignUp
+  </title>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Passion+One'>
+  <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Oxygen'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <script src="https://code.angularjs.org/1.6.9/angular-route.js"></script>
+  <script src="https://code.angularjs.org/1.6.9/angular.min.js"></script>
+  <script src="https://code.angularjs.org/1.6.9/angular.js"></script>
+</head>
+
+<body>
+  
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="col-sm-8">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Mentor-On-Demand</a>
+        </div>
+      </div>
+
+      <form class="navbar-form navbar-right" action="">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search" name="search">
+          <div class="input-group-btn">
+            <button class="btn btn-default" type="submit">
+              <i class="glyphicon glyphicon-search"></i>
+            </button>
+          </div>
+        </div>
+      </form>
+
+    </div>
+
+  </nav>
+  <div class="split left">
+    <div class="centered">
+      <img src="image2.jpg" alt="">
+    </div>
+  </div>
+
+  <div class="split right">
+   
+
+    <div class="centered">
+        <h1 class="text-center">User SignUp</h1>
+      <div class="main-login main-center">
+        <form class="form-horizontal" method="post" action="UserLogin.html">
+          <div class="form-group">
+         
+            <label for="name">Your Name</label>
+            <div class="cols-sm-10">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-user fa-lg" aria-hidden="true"></i></span>
+                <input type="text" class="form-control" name="name" id="name" placeholder="Enter your Name" required/>
+              </div>
+              <div class="message" id="message_name">
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email" class="cols-sm-2 control-label">Your Email</label>
+            <div class="cols-sm-10">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+                <input type="email" class="form-control" name="email" id="email" placeholder="Enter your Email" required />
+              </div>
+              <div class="message" id="message_mail">
+              </div>
+            </div>
+          </div>
+
+
+          <div class="form-group">
+            <label for="password" class="cols-sm-2 control-label">Password</label>
+            <div class="cols-sm-10">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-unlock fa-lg" aria-hidden="true"></i></span>
+                <input type="password" class="form-control" name="password" id="password"
+                  placeholder="Enter your Password" required />
+              </div>
+              <div class="message" id="message_password">
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="confirm" class="cols-sm-2 control-label">Confirm Password</label>
+            <div class="cols-sm-10">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                <input type="password" class="form-control" name="conf_password" id="conf_password"
+                  placeholder="Confirm your Password" required/>
+              </div>
+              <div class="message" id="message_conf_password">
+              </div>
+            </div>
+          </div>
+          
+          <div class="form-group ">
+            <button type="submit"   class="btn btn-primary btn-lg btn-block login-button"
+              onclick="check()">Register</button>
+          </div>
+        </form>
+        <div class="form-group">
+            <p>Already Have Account ? Click <a href="UserLogin.html">Here</a></p> 
+            </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="validate.js"></script>
+</body>
+
+</html>
